@@ -12,7 +12,6 @@ body {
 }
 header {
     background-color: rgb(192, 90, 31);
-
     padding: 20px;
 }
 ul {
@@ -22,7 +21,6 @@ li {
     margin-right: 35px;
     display: inline-block;
     position: relative;
-    
 }
 li::after {
     content:"";
@@ -40,6 +38,12 @@ li:hover::after{
 a {
     text-decoration: none;
     color: white;
+}
+header img {
+    position: absolute;
+    width: 55px;
+    right: 5px;
+    top: 5px;
 }
 h1 {
     text-align: center;
@@ -63,4 +67,11 @@ th,td {
 }
 .intervalo {
     background-color: gray;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 58px;
+    background-color: rgb(192, 90, 31);
 }
