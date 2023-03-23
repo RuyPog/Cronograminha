@@ -76,3 +76,15 @@ footer {
     height: 58px;
     background-color: rgb(45, 52, 143);
 }
+footer img:first-child {
+    position: absolute;
+    width: 35px;
+    bottom: 12px;
+    left: 70px;
+}
+footer img:last-child {
+    position: absolute;
+    width: 35px;
+    bottom: 12px;
+    left: 15px;
+}
