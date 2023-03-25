@@ -49,6 +49,14 @@ header img {
 h1 {
     text-align: center;
 }
+menu {
+    background-color: azure;
+    width: 10%;
+    height: 100%;
+    float: right;
+    margin-bottom: 20px;
+    padding: 5px;
+}
 table {
     margin: 0;
     position: absolute;
