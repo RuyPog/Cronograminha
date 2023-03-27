@@ -202,6 +202,7 @@
 				</td>
 			</tr>
 	</table>
+	<div class="zap"></div>
 	</main>
 	<footer>
 		<img src="insta.png" alt="Instagram">
@@ -209,13 +210,10 @@
 	</footer>
 	<script>
 		function time(){
-			today=new Date();
-			h=today.getHours();
-			m=today.getMinutes();
-			s=today.getSeconds();
-			document.getElementById('txt').innerHTML=h+":"+m+":"+s;
-			setTimeout('time()',500);
+			now = new Date();
+			document.write("Hoje é" + now.getDay() + ", " + now.getDate() + "de" + now.getMonth() + "de" + now.getFullYear());
 		}
+		if()
 	</script>
 </body>
 </html>
