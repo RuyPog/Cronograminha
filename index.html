@@ -10,6 +10,7 @@
 	<script>
 		function time(){
 			now = new Date();
+			document.getElementById("zap").innerHTML = "Hoje é" + now.getDay() + ", " + now.getDate() + "de" + now.getMonth() + "de" + now.getFullYear();
 			document.write("Hoje é" + now.getDay() + ", " + now.getDate() + "de" + now.getMonth() + "de" + now.getFullYear());
 		}
 	</script>
@@ -208,7 +209,7 @@
 				</td>
 			</tr>
 	</table>
-	<div class="zap"></div>
+	<div id="zap"></div>
 	</main>
 	<footer>
 		<img src="insta.png" alt="Instagram">
