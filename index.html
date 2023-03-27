@@ -7,13 +7,6 @@
 	<link rel="stylesheet" href="style.css">
 	<link rel="shortcut icon" href="open-book.png">
 	<!--https://www.flaticon.com/free-icons/open-book Open book icons created by Pixel perfect - Flaticon-->
-	<script>
-		function time(){
-			now = new Date();
-			document.getElementById("zap").innerHTML = "Hoje é" + now.getDay() + ", " + now.getDate() + "de" + now.getMonth() + "de" + now.getFullYear();
-			document.write("Hoje é" + now.getDay() + ", " + now.getDate() + "de" + now.getMonth() + "de" + now.getFullYear());
-		}
-	</script>
 	<title>Cronograma Exatas</title>
 </head>
 <body onload="time()">
@@ -215,5 +208,11 @@
 		<img src="insta.png" alt="Instagram">
 		<img src="face.png" alt="Facebook">
 	</footer>
+	<script>
+		function time(){
+			now = new Date();
+			document.getElementById("zap").innerHTML = "Hoje é" + now.getDay() + ", " + now.getDate() + "de" + now.getMonth() + "de" + now.getFullYear();
+		}
+	</script>
 </body>
 </html>
