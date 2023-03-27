@@ -9,7 +9,7 @@
 	<!--https://www.flaticon.com/free-icons/open-book Open book icons created by Pixel perfect - Flaticon-->
 	<title>Cronograma Exatas</title>
 </head>
-<body>
+<body onload="time()">
 	<header>
 		<nav>
 			<ul>
@@ -66,19 +66,19 @@
 					7:20
 				</th>
 				<td>
-					Matemática
+					Matemática I
 				</td>
 				<td>
-					Matemática
+					Física I
 				</td>
 				<td>
-					Matemática
+					Matemática I
 				</td>
 				<td>
-					Matemática
+					Português
 				</td>
 				<td>
-					Matemática
+					Português
 				</td>
 			</tr>
 			<tr>
@@ -86,19 +86,19 @@
 					8:10
 				</th>
 				<td>
-					Matemática
+					Química
 				</td>
 				<td>
-					Matemática
+					Física I
 				</td>
 				<td>
-					Matemática
+					Matemática I
 				</td>
 				<td>
-					Matemática
+					Sociologia
 				</td>
 				<td>
-					Matemática
+					Português
 				</td>
 			</tr>
 			<tr>
@@ -109,16 +109,16 @@
 					Matemática
 				</td>
 				<td>
-					Matemática
+					Geografia
 				</td>
 				<td>
-					Matemática
+					Inglês
 				</td>
 				<td>
-					Matemática
+					Inglês
 				</td>
 				<td>
-					Matemática
+					Biologia I
 				</td>
 			</tr>
 			<tr class="intervalo">
@@ -149,16 +149,16 @@
 					Matemática
 				</td>
 				<td>
-					Matemática
+					Sociologia
+				</td>
+				<td>
+					Química
 				</td>
 				<td>
 					Matemática
 				</td>
 				<td>
-					Matemática
-				</td>
-				<td>
-					Matemática
+					Biologia
 				</td>
 			</tr>
 			<tr>
@@ -166,19 +166,19 @@
 					10:55
 				</th>
 				<td>
-					Matemática
+					História
 				</td>
 				<td>
-					Matemática
+					Biologia I
 				</td>
 				<td>
-					Matemática
+					Matemática II
 				</td>
 				<td>
-					Matemática
+					Projeto de Vida
 				</td>
 				<td>
-					Matemática
+					Geografia
 				</td>
 			</tr>
 			<tr>
@@ -186,19 +186,19 @@
 					11:45
 				</th>
 				<td>
-					Matemática
+					Ed. Fin.
 				</td>
 				<td>
-					Matemática
+					História
 				</td>
 				<td>
-					Matemática
+					Ed. Fin.
 				</td>
 				<td>
-					Matemática
+					Biologia
 				</td>
 				<td>
-					Matemática
+					Matemática II
 				</td>
 			</tr>
 	</table>
@@ -207,5 +207,15 @@
 		<img src="insta.png" alt="Instagram">
 		<img src="face.png" alt="Facebook">
 	</footer>
+	<script>
+		function time(){
+			today=new Date();
+			h=today.getHours();
+			m=today.getMinutes();
+			s=today.getSeconds();
+			document.getElementById('txt').innerHTML=h+":"+m+":"+s;
+			setTimeout('time()',500);
+		}
+	</script>
 </body>
 </html>

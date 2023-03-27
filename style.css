@@ -57,6 +57,9 @@ menu {
     margin-bottom: 20px;
     padding: 5px;
 }
+menu li {
+    list-style: georgian outside url('/non-existent.svg');
+}
 table {
     margin: 0;
     position: absolute;
@@ -73,6 +76,7 @@ table {
 }
 th,td {
     border: 1px solid black;
+    width: 0px;
 }
 .intervalo {
     background-color: gray;
