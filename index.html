@@ -9,7 +9,7 @@
 	<!--https://www.flaticon.com/free-icons/open-book Open book icons created by Pixel perfect - Flaticon-->
 	<title>Cronograma Exatas</title>
 </head>
-<body onload="time()">
+<body>
 	<header>
 		<nav>
 			<ul>
@@ -65,7 +65,7 @@
 				<th>
 					7:20
 				</th>
-				<td>
+				<td id="Atumalaca">
 					Matemática I
 				</td>
 				<td>
@@ -202,40 +202,152 @@
 				</td>
 			</tr>
 	</table>
-	<div class="zap"></div>
+	<div class="zap"><h2>Prossima aula:</h2>
+	<span class="zaperson"></span>
+	</div>
 	</main>
 	<footer>
 		<img src="insta.png" alt="Instagram">
 		<img src="face.png" alt="Facebook">
 	</footer>
 	<script>
-		function time(){
-			//const clock = document.getElementsByClassName('zap');
-			//const date = new Date();
-			//const d = date.getDay();
-			//const s = date.getDate();
-			//const m = date.getMonth();
-			//const y = date.getFullYear();
-			//clock.innerHTML = d + s + m + y;
-			//if(s == 27){
-			//	alert("OW WhataHeeeeeeeeeeeeeeeeeeeeeeeeeel");
-			//}
-			const getHours = () => {
-  const clock = document.getElementsByClassName('zap')[0]
-  const date = new Date()
-  const hours = date.getHours()
-  const minutes = date.getMinutes()
-  const seconds = date.getSeconds()
-  const hour = hours < 10 ? `0${hours}` : hours
-  const minute = minutes < 10 ? `0${minutes}` : minutes
-  const second = seconds < 10 ? `0${seconds}` : seconds
-  clock.innerHTML = `${hour}:${minute}:${second}`
-}
-setInterval(() => {
-  getHours()
-}, 1000)
+		function reloj() {
+  var hoy = new Date();
+  var dia = hoy.getDay();
+  var hora = hoy.getHours();
+  var minuto = hoy.getMinutes();
+  var segundo = hoy.getSeconds();
+  //var horaD = 15;
+  //var minutoD = 28;
 
-}
+  if (minuto < 10) {
+    minuto = "0" + minuto
+  };
+  if (segundo < 10) {
+    segundo = "0" + segundo
+  }
+
+  if (dia == 1 & hora < 7 & minuto < 20) {
+	document.querySelector(".zaperson").innerHTML = "Matemática I";
+  }
+  if (dia == 1 & hora == 7 & minuto == 20) {
+	document.querySelector(".zaperson").innerHTML = "Química";
+  }
+  if (dia == 1 & hora == 8 & minuto == 10) {
+	document.querySelector(".zaperson").innerHTML = "Matemática";
+  }
+  if (dia == 1 & hora == 9 & minuto == 00) {
+	document.querySelector(".zaperson").innerHTML = "Recreio XD";
+  }
+  if (dia == 1 & hora == 9 & minuto == 50) {
+	document.querySelector(".zaperson").innerHTML = "Matemática";
+  }
+  if (dia == 1 & hora == 10 & minuto == 05) {
+	document.querySelector(".zaperson").innerHTML = "História";
+  }
+  if (dia == 1 & hora == 10 & minuto == 55) {
+	document.querySelector(".zaperson").innerHTML = "Ed. Fin.";
+  }
+
+
+  if (dia == 2 & hora < 7 & minuto < 20) {
+	document.querySelector(".zaperson").innerHTML = "Física I";
+  }
+  if (dia == 2 & hora == 7 & minuto == 20) {
+	document.querySelector(".zaperson").innerHTML = "Física I";
+  }
+  if (dia == 2 & hora == 8 & minuto == 10) {
+	document.querySelector(".zaperson").innerHTML = "Geografia";
+  }
+  if (dia == 2 & hora == 9 & minuto == 00) {
+	document.querySelector(".zaperson").innerHTML = "Recreio XD";
+  }
+  if (dia == 2 & hora == 9 & minuto == 50) {
+	document.querySelector(".zaperson").innerHTML = "Socialismo";
+  }
+  if (dia == 2 & hora == 10 & minuto == 05) {
+	document.querySelector(".zaperson").innerHTML = "Biologia I";
+  }
+  if (dia == 2 & hora == 10 & minuto == 55) {
+	document.querySelector(".zaperson").innerHTML = "História";
+  }
+
+
+  if (dia == 3 & hora < 7 & minuto < 20) {
+	document.querySelector(".zaperson").innerHTML = "Matemática I";
+  }
+  if (dia == 3 & hora == 7 & minuto == 20) {
+	document.querySelector(".zaperson").innerHTML = "Matemática I";
+  }
+  if (dia == 3 & hora == 8 & minuto == 10) {
+	document.querySelector(".zaperson").innerHTML = "Inglês";
+  }
+  if (dia == 3 & hora == 9 & minuto == 00) {
+	document.querySelector(".zaperson").innerHTML = "Recreio XD";
+  }
+  if (dia == 3 & hora == 9 & minuto == 50) {
+	document.querySelector(".zaperson").innerHTML = "Química";
+  }
+  if (dia == 3 & hora == 10 & minuto == 05) {
+	document.querySelector(".zaperson").innerHTML = "Matemática II";
+  }
+  if (dia == 3 & hora == 10 & minuto == 55) {
+	document.querySelector(".zaperson").innerHTML = "Ed. Fin.";
+  }
+
+  
+  if (dia == 4 & hora < 7 & minuto < 20) {
+	document.querySelector(".zaperson").innerHTML = "Português";
+  }
+  if (dia == 4 & hora == 7 & minuto == 20) {
+	document.querySelector(".zaperson").innerHTML = "Sociologia";
+  }
+  if (dia == 4 & hora == 8 & minuto == 10) {
+	document.querySelector(".zaperson").innerHTML = "Inglês";
+  }
+  if (dia == 4 & hora == 9 & minuto == 00) {
+	document.querySelector(".zaperson").innerHTML = "Recreio XD";
+  }
+  if (dia == 4 & hora == 9 & minuto == 50) {
+	document.querySelector(".zaperson").innerHTML = "Matemática";
+  }
+  if (dia == 4 & hora == 10 & minuto == 05) {
+	document.querySelector(".zaperson").innerHTML = "Proj. de Vida";
+  }
+  if (dia == 4 & hora == 10 & minuto == 55) {
+	document.querySelector(".zaperson").innerHTML = "Biologia";
+  }
+
+
+  if (dia == 5 & hora < 7 & minuto < 20) {
+	document.querySelector(".zaperson").innerHTML = "Português";
+  }
+  if (dia == 5 & hora == 7 & minuto == 20) {
+	document.querySelector(".zaperson").innerHTML = "Português";
+  }
+  if (dia == 5 & hora == 8 & minuto == 10) {
+	document.querySelector(".zaperson").innerHTML = "Biologia I";
+  }
+  if (dia == 5 & hora == 9 & minuto == 00) {
+	document.querySelector(".zaperson").innerHTML = "Recreio XD";
+  }
+  if (dia == 5 & hora == 9 & minuto == 50) {
+	document.querySelector(".zaperson").innerHTML = "Biologia";
+  }
+  if (dia == 5 & hora == 10 & minuto == 05) {
+	document.querySelector(".zaperson").innerHTML = "Geografia";
+  }
+  if (dia == 5 & hora == 10 & minuto == 55) {
+	document.querySelector(".zaperson").innerHTML = "Matemática II";
+  }
+
+
+  if (hora >= 12) {
+	document.querySelector(".zaperson").innerHTML = "Manoel Gome";
+  }
+};
+
+setInterval(reloj, 1000);
 	</script>
 </body>
 </html>
