@@ -100,3 +100,15 @@ footer img:last-child {
     bottom: 12px;
     left: 15px;
 }
+.zap {
+    align-items: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px solid #000;
+  border-radius: 3%;
+  color: #fff;
+  display: flex;
+  font-size: 60px;
+  justify-content: center;
+  height: 100px;
+  width: 250px;
+}

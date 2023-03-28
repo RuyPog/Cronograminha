@@ -9,7 +9,7 @@
 	<!--https://www.flaticon.com/free-icons/open-book Open book icons created by Pixel perfect - Flaticon-->
 	<title>Cronograma Exatas</title>
 </head>
-<body>
+<body onload="time()">
 	<header>
 		<nav>
 			<ul>
@@ -202,7 +202,7 @@
 				</td>
 			</tr>
 	</table>
-	<div id="zap" onload="time()"></div>
+	<div class="zap"></div>
 	</main>
 	<footer>
 		<img src="insta.png" alt="Instagram">
@@ -210,16 +210,32 @@
 	</footer>
 	<script>
 		function time(){
-			let now = new Date();
-			let d = now.getDay();
-			let s = now.getDate();
-			let m = now.getMonth();
-			let y = now.getFullYear();
+			//const clock = document.getElementsByClassName('zap');
+			//const date = new Date();
+			//const d = date.getDay();
+			//const s = date.getDate();
+			//const m = date.getMonth();
+			//const y = date.getFullYear();
+			//clock.innerHTML = d + s + m + y;
+			//if(s == 27){
+			//	alert("OW WhataHeeeeeeeeeeeeeeeeeeeeeeeeeel");
+			//}
+			const getHours = () => {
+  const clock = document.getElementsByClassName('zap')[0]
+  const date = new Date()
+  const hours = date.getHours()
+  const minutes = date.getMinutes()
+  const seconds = date.getSeconds()
+  const hour = hours < 10 ? `0${hours}` : hours
+  const minute = minutes < 10 ? `0${minutes}` : minutes
+  const second = seconds < 10 ? `0${seconds}` : seconds
+  clock.innerHTML = `${hour}:${minute}:${second}`
+}
+setInterval(() => {
+  getHours()
+}, 1000)
 
-			if(now.getDay >= 1){
-				document.getElementById('tabela').style.display = "none";
-			}
-		}
+}
 	</script>
 </body>
 </html>
