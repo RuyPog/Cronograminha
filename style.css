@@ -126,39 +126,3 @@ footer img:last-child {
   font-size: 20px;
   font-weight: bold;
 }
-@import url(https://fonts.googleapis.com/css?family=Orbitron:700);
-
-.contenedor {
-  margin: 10%;
-  padding: 10px;
-  background: rgba(100, 100, 100, 0.3);
-}
-
-.t {
-  font-size: 2em;
-}
-
-.timeis {
-  width: 100%;
-  padding: 10px;
-  font-size: 3em;
-}
-
-.desperta {
-  position: relative;
-  top: 20px;
-}
-
-button {
-  margin: 10px;
-  padding: 5px;
-  background: grey;
-  border: solid 1px grey;
-  font-weight: bold;
-}
-
-.obs {
-  position:relative;
-  top: 150px;
-  color: white;
-}
