@@ -42,7 +42,7 @@
 		Caneta azul, azul caneta<br>
 		Caneta azul tá marcada com minha letra<br>
 	</menu>
-	<table>
+	<table id="tabela">
 			<tr>
 				<td>Horários</td>
 				<th>
@@ -210,10 +210,14 @@
 	</footer>
 	<script>
 		function time(){
-			var now = new Date();
-			console.log("Hoje é" + now.getDay() + ", " + now.getDate() + "de" + now.getMonth() + "de" + now.getFullYear());
-			if(now.getDay = 1){
-				alert(Atumalaca);
+			let now = new Date();
+			let d = now.getDay();
+			let s = now.getDate();
+			let m = now.getMonth();
+			let y = now.getFullYear();
+
+			if(now.getDay >= 1){
+				document.getElementById('tabela').style.display = "none";
 			}
 		}
 	</script>
