@@ -74,6 +74,7 @@ table {
     height: 300px;
     width: 1000px;
     border-collapse: collapse;
+    box-shadow: 1px 2px 1px rgb(9,17,131);
     text-align: center;
     padding: 5px;
     margin: 5px;
@@ -92,17 +93,11 @@ footer {
     height: 58px;
     background-color: rgb(9, 17, 131);
 }
-footer img:first-child {
+footer img {
     position: absolute;
-    width: 35px;
-    bottom: 12px;
-    left: 70px;
-}
-footer img:last-child {
-    position: absolute;
-    width: 35px;
-    bottom: 12px;
-    left: 15px;
+    width: 40px;
+    bottom: 14px;
+    right: 20px;
 }
 .zap {
   background-color: rgba(255, 255, 255, 0.5);
