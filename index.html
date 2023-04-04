@@ -45,7 +45,7 @@
 					7:20
 				</th>
 				<td>
-					<input id="f1c1" type="text" onload="atumalaca()">
+					<input id="name" name="name" type="text" onload="atumalaca()" required>
 				</td>
 				<td>
 					Física I
@@ -181,6 +181,7 @@
 				</td>
 			</tr>
 	</table>
+	<input type="submit" value="Enviar" >
 	<div class="zap"><h2>Próxima aula:</h2>
 	<span class="zaperson"></span>
 	</div>
@@ -191,10 +192,18 @@
 		</a>
 	</footer>
 	<script>
-			localStorage.setItem("#f1c1", JSON.stringify(f1c1))
-			const name = localStorage.getItem("#f1c1")
-			document.write("Balsonaro")
+		const tabela = document.querySelector("#tabela")
 
+		tabela.addEventListener("submit", (e) =>{
+		e.preventDefault();
+
+		const nameInput = document.querySelector("#name")
+
+		localStorage.setItem("name",  nameInput.value)
+
+		nameInput.value = "";
+		})
+		const userName = localStorage.getItem("name")
 		function reloj() {
   			var hoy = new Date();
   			var dia = hoy.getDay();
