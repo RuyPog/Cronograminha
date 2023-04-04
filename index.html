@@ -45,7 +45,7 @@
 					7:20
 				</th>
 				<td>
-					<input id="name" name="name" type="text" onload="atumalaca()" required>
+					<input id="name" name="name" type="text" required>
 				</td>
 				<td>
 					Física I
@@ -181,7 +181,16 @@
 				</td>
 			</tr>
 	</table>
-	<!--<input type="submit" value="Enviar" >-->
+	<form id="name-form">
+		<h2>Lula</h2>
+		<label for="name">Nome:</label>
+		<input type="text" id="name" name="name" placeholder="Balsonaro" required>
+		<input type="submit" value="Enviar">
+	</form>
+	<div id="welcome">
+		<h2>Lula 2<span id="username"></span></h2>
+		<button id="logout"></button>
+	</div>
 	<div class="zap"><h2>Próxima aula:</h2>
 	<span class="zaperson"></span>
 	</div>
@@ -192,16 +201,18 @@
 		</a>
 	</footer>
 	<script>
-		const tabela = document.querySelector("#tabela")
+		const nameForm = document.querySelector("#name-form")
+		const welcomeContainer = document.querySelector("#welcome")
+		const logout = document.querySelector("#logout")
 
-		tabela.addEventListener("submit", (e) =>{
+		nameForm.addEventListener("submit", (e) =>{
 		e.preventDefault();
 
 		const nameInput = document.querySelector("#name")
 
-		localStorage.setItem("name",  nameInput.value)
+		localStorage.setItem("name", nameInput.value)
 
-		nameInput.value = "";
+		
 		})
 
 

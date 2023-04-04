@@ -87,7 +87,7 @@ th,td {
 .intervalo {
     background-color: gray;
 }
-input {
+table input {
     background: aqua;
     margin-left: -3px;
     width: 100%;
