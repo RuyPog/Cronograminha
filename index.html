@@ -45,7 +45,7 @@
 					7:20
 				</th>
 				<td>
-					Matemática I
+					<input id="f1c1" type="text" onload="atumalaca()">
 				</td>
 				<td>
 					Física I
@@ -191,6 +191,10 @@
 		</a>
 	</footer>
 	<script>
+			localStorage.setItem("#f1c1", JSON.stringify(f1c1))
+			const name = localStorage.getItem("#f1c1")
+			document.write("Balsonaro")
+
 		function reloj() {
   			var hoy = new Date();
   			var dia = hoy.getDay();
