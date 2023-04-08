@@ -45,19 +45,19 @@
 					7:20
 				</th>
 				<td>
-					Português
+					<input id="name31" name="name31" type="text" required>
 				</td>
 				<td>
-					Química
+					<input id="name32" name="name32" type="text" required>
 				</td>
 				<td>
-					Ed. Física
+					<input id="name33" name="name33" type="text" required>
 				</td>
 				<td>
-					Projeto de Vida
+					<input id="name34" name="name34" type="text" required>
 				</td>
 				<td>
-					Português
+					<input id="name35" name="name35" type="text" required>
 				</td>
 			</tr>
 			<tr>
@@ -65,19 +65,19 @@
 					8:10
 				</th>
 				<td>
-					Química
+					<input id="name36" name="name36" type="text" required>
 				</td>
 				<td>
-					Sociologia
+					<input id="name37" name="name37" type="text" required>
 				</td>
 				<td>
-					Artes I
+					<input id="name38" name="name38" type="text" required>
 				</td>
 				<td>
-					Matemática
+					<input id="name39" name="name39" type="text" required>
 				</td>
 				<td>
-					Português
+					<input id="name40" name="name40" type="text" required>
 				</td>
 			</tr>
 			<tr>
@@ -85,19 +85,19 @@
 					9:00
 				</th>
 				<td>
-					Português I
+					<input id="name41" name="name41" type="text" required>
 				</td>
 				<td>
-					Ed. Fin.
+					<input id="name42" name="name42" type="text" required>
 				</td>
 				<td>
-					Matemática
+					<input id="name43" name="name43" type="text" required>
 				</td>
 				<td>
-					Geografia
+					<input id="name44" name="name44" type="text" required>
 				</td>
 				<td>
-					Ed. Física
+					<input id="name45" name="name45" type="text" required>
 				</td>
 			</tr>
 			<tr class="intervalo">
@@ -125,19 +125,19 @@
 					10:05
 				</th>
 				<td>
-					História
+					<input id="name46" name="name46" type="text" required>
 				</td>
 				<td>
-					Ed. Fin.
+					<input id="name47" name="name47" type="text" required>
 				</td>
 				<td>
-					Matemática
+					<input id="name48" name="name48" type="text" required>
 				</td>
 				<td>
-					Filosofia I
+					<input id="name49" name="name49" type="text" required>
 				</td>
 				<td>
-					Sociologia
+					<input id="name50" name="name50" type="text" required>
 				</td>
 			</tr>
 			<tr>
@@ -145,19 +145,19 @@
 					10:55
 				</th>
 				<td>
-					Artes I
+					<input id="name51" name="name51" type="text" required>
 				</td>
 				<td>
-					Biologia
+					<input id="name52" name="name52" type="text" required>
 				</td>
 				<td>
-					Biologia
+					<input id="name53" name="name53" type="text" required>
 				</td>
 				<td>
-					Filosofia I
+					<input id="name54" name="name54" type="text" required>
 				</td>
 				<td>
-					Inglês
+					<input id="name55" name="name55" type="text" required>
 				</td>
 			</tr>
 			<tr>
@@ -165,25 +165,28 @@
 					11:45
 				</th>
 				<td>
-					Inglês
+					<input id="name56" name="name56" type="text" required>
 				</td>
 				<td>
-					Português I
+					<input id="name57" name="name57" type="text" required>
 				</td>
 				<td>
-					Filosofia I
+					<input id="name58" name="name58" type="text" required>
 				</td>
 				<td>
-					História
+					<input id="name59" name="name59" type="text" required>
 				</td>
 				<td>
-					Geografia
+					<input id="name60" name="name60" type="text" required>
 				</td>
 			</tr>
 	</table>
+	<form id="name-form">
+		<input type="submit" value="Enviar">
+	</form>
 	<div class="zap"><h2>Próxima aula:</h2>
-		<span class="zaperson"></span>
-		</div>
+	<span class="zaperson"></span>
+	</div>
 	</main>
 	<footer>
 		<a href="https://www.youtube.com/@aulaparana9301" target="_blank">
@@ -191,6 +194,430 @@
 		</a>
 	</footer>
 	<script>
+		const nameForm = document.querySelector("#name-form")
+		const welcomeContainer = document.querySelector("#welcome")
+		const logout = document.querySelector("#logout")
+
+		nameForm.addEventListener("submit", (e) =>{
+			e.preventDefault();
+
+			const nameInput31 = document.querySelector("#name31")
+
+			localStorage.setItem("name31", nameInput31.value)
+		})
+		
+		var TLOU31 = localStorage.getItem('name31');
+		document.getElementById('name31').value = TLOU31;
+
+
+
+
+		nameForm.addEventListener("submit", (e) =>{
+			e.preventDefault();
+
+			const nameInput32 = document.querySelector("#name32")
+
+			localStorage.setItem("name32", nameInput32.value)
+		})
+		
+		var TLOU32 = localStorage.getItem('name32');
+		document.getElementById('name32').value = TLOU32;
+
+
+
+
+		nameForm.addEventListener("submit", (e) =>{
+			e.preventDefault();
+
+			const nameInput33 = document.querySelector("#name33")
+
+			localStorage.setItem("name33", nameInput33.value)
+		})
+		
+		var TLOU33 = localStorage.getItem('name33');
+		document.getElementById('name33').value = TLOU33;
+
+
+
+
+		nameForm.addEventListener("submit", (e) =>{
+			e.preventDefault();
+
+			const nameInput34 = document.querySelector("#name34")
+
+			localStorage.setItem("name34", nameInput34.value)
+		})
+		
+		var TLOU34 = localStorage.getItem('name34');
+		document.getElementById('name34').value = TLOU34;
+
+
+
+
+		nameForm.addEventListener("submit", (e) =>{
+			e.preventDefault();
+
+			const nameInput35 = document.querySelector("#name35")
+
+			localStorage.setItem("name35", nameInput35.value)
+		})
+		
+		var TLOU35 = localStorage.getItem('name35');
+		document.getElementById('name35').value = TLOU35;
+
+
+
+
+		nameForm.addEventListener("submit", (e) =>{
+			e.preventDefault();
+
+			const nameInput36 = document.querySelector("#name36")
+
+			localStorage.setItem("name36", nameInput36.value)
+		})
+		
+		var TLOU36 = localStorage.getItem('name36');
+		document.getElementById('name36').value = TLOU36;
+
+
+
+
+		nameForm.addEventListener("submit", (e) =>{
+			e.preventDefault();
+
+			const nameInput37 = document.querySelector("#name37")
+
+			localStorage.setItem("name37", nameInput37.value)
+		})
+		
+		var TLOU37 = localStorage.getItem('name37');
+		document.getElementById('name37').value = TLOU37;
+
+
+
+
+		nameForm.addEventListener("submit", (e) =>{
+			e.preventDefault();
+
+			const nameInput38 = document.querySelector("#name38")
+
+			localStorage.setItem("name38", nameInput38.value)
+		})
+		
+		var TLOU38 = localStorage.getItem('name38');
+		document.getElementById('name38').value = TLOU38;
+
+
+
+
+		nameForm.addEventListener("submit", (e) =>{
+			e.preventDefault();
+
+			const nameInput39 = document.querySelector("#name39")
+
+			localStorage.setItem("name39", nameInput39.value)
+		})
+		
+		var TLOU39 = localStorage.getItem('name39');
+		document.getElementById('name39').value = TLOU39;
+
+
+
+
+		nameForm.addEventListener("submit", (e) =>{
+			e.preventDefault();
+
+			const nameInput40 = document.querySelector("#name40")
+
+			localStorage.setItem("name40", nameInput40.value)
+		})
+		
+		var TLOU40 = localStorage.getItem('name40');
+		document.getElementById('name40').value = TLOU40;
+
+
+
+
+		nameForm.addEventListener("submit", (e) =>{
+			e.preventDefault();
+
+			const nameInput41 = document.querySelector("#name41")
+
+			localStorage.setItem("name41", nameInput41.value)
+		})
+		
+		var TLOU41 = localStorage.getItem('name41');
+		document.getElementById('name41').value = TLOU41;
+
+
+
+
+		nameForm.addEventListener("submit", (e) =>{
+			e.preventDefault();
+
+			const nameInput42 = document.querySelector("#name42")
+
+			localStorage.setItem("name42", nameInput42.value)
+		})
+		
+		var TLOU42 = localStorage.getItem('name42');
+		document.getElementById('name42').value = TLOU42;
+
+
+
+
+		nameForm.addEventListener("submit", (e) =>{
+			e.preventDefault();
+
+			const nameInput43 = document.querySelector("#name43")
+
+			localStorage.setItem("name43", nameInput43.value)
+		})
+		
+		var TLOU43 = localStorage.getItem('name43');
+		document.getElementById('name43').value = TLOU43;
+
+
+
+
+		nameForm.addEventListener("submit", (e) =>{
+			e.preventDefault();
+
+			const nameInput44 = document.querySelector("#name44")
+
+			localStorage.setItem("name44", nameInput44.value)
+		})
+		
+		var TLOU44 = localStorage.getItem('name44');
+		document.getElementById('name44').value = TLOU44;
+
+
+
+
+		nameForm.addEventListener("submit", (e) =>{
+			e.preventDefault();
+
+			const nameInput45 = document.querySelector("#name45")
+
+			localStorage.setItem("name45", nameInput45.value)
+		})
+		
+		var TLOU45 = localStorage.getItem('name45');
+		document.getElementById('name45').value = TLOU45;
+		
+
+
+
+		nameForm.addEventListener("submit", (e) =>{
+			e.preventDefault();
+
+			const nameInput46 = document.querySelector("#name46")
+
+			localStorage.setItem("name46", nameInput46.value)
+		})
+		
+		var TLOU46 = localStorage.getItem('name46');
+		document.getElementById('name46').value = TLOU46;
+
+
+
+
+		nameForm.addEventListener("submit", (e) =>{
+			e.preventDefault();
+
+			const nameInput47 = document.querySelector("#name47")
+
+			localStorage.setItem("name47", nameInput47.value)
+		})
+		
+		var TLOU47 = localStorage.getItem('name47');
+		document.getElementById('name47').value = TLOU47;
+
+
+
+
+		nameForm.addEventListener("submit", (e) =>{
+			e.preventDefault();
+
+			const nameInput48 = document.querySelector("#name48")
+
+			localStorage.setItem("name48", nameInput48.value)
+		})
+		
+		var TLOU48 = localStorage.getItem('name48');
+		document.getElementById('name48').value = TLOU48;
+
+
+
+
+		nameForm.addEventListener("submit", (e) =>{
+			e.preventDefault();
+
+			const nameInput49 = document.querySelector("#name49")
+
+			localStorage.setItem("name49", nameInput49.value)
+		})
+		
+		var TLOU49 = localStorage.getItem('name49');
+		document.getElementById('name49').value = TLOU49;
+
+
+
+
+		nameForm.addEventListener("submit", (e) =>{
+			e.preventDefault();
+
+			const nameInput50 = document.querySelector("#name50")
+
+			localStorage.setItem("name50", nameInput50.value)
+		})
+		
+		var TLOU50 = localStorage.getItem('name50');
+		document.getElementById('name50').value = TLOU50;
+
+
+
+
+		nameForm.addEventListener("submit", (e) =>{
+			e.preventDefault();
+
+			const nameInput51 = document.querySelector("#name51")
+
+			localStorage.setItem("name51", nameInput51.value)
+		})
+		
+		var TLOU51 = localStorage.getItem('name51');
+		document.getElementById('name51').value = TLOU51;
+
+
+
+
+		nameForm.addEventListener("submit", (e) =>{
+			e.preventDefault();
+
+			const nameInput52 = document.querySelector("#name52")
+
+			localStorage.setItem("name52", nameInput52.value)
+		})
+		
+		var TLOU52 = localStorage.getItem('name52');
+		document.getElementById('name52').value = TLOU52;
+
+
+
+
+		nameForm.addEventListener("submit", (e) =>{
+			e.preventDefault();
+
+			const nameInput53 = document.querySelector("#name53")
+
+			localStorage.setItem("name53", nameInput53.value)
+		})
+		
+		var TLOU53 = localStorage.getItem('name53');
+		document.getElementById('name53').value = TLOU53;
+
+
+
+
+		nameForm.addEventListener("submit", (e) =>{
+			e.preventDefault();
+
+			const nameInput54 = document.querySelector("#name54")
+
+			localStorage.setItem("name54", nameInput54.value)
+		})
+		
+		var TLOU54 = localStorage.getItem('name54');
+		document.getElementById('name54').value = TLOU54;
+
+
+
+
+		nameForm.addEventListener("submit", (e) =>{
+			e.preventDefault();
+
+			const nameInput55 = document.querySelector("#name55")
+
+			localStorage.setItem("name55", nameInput55.value)
+		})
+		
+		var TLOU55 = localStorage.getItem('name55');
+		document.getElementById('name55').value = TLOU55;
+
+
+
+
+		nameForm.addEventListener("submit", (e) =>{
+			e.preventDefault();
+
+			const nameInput56 = document.querySelector("#name56")
+
+			localStorage.setItem("name56", nameInput56.value)
+		})
+		
+		var TLOU56 = localStorage.getItem('name56');
+		document.getElementById('name56').value = TLOU56;
+
+
+
+
+		nameForm.addEventListener("submit", (e) =>{
+			e.preventDefault();
+
+			const nameInput57 = document.querySelector("#name57")
+
+			localStorage.setItem("name57", nameInput57.value)
+		})
+		
+		var TLOU57 = localStorage.getItem('name57');
+		document.getElementById('name57').value = TLOU57;
+
+
+
+
+		nameForm.addEventListener("submit", (e) =>{
+			e.preventDefault();
+
+			const nameInput58 = document.querySelector("#name58")
+
+			localStorage.setItem("name58", nameInput58.value)
+		})
+		
+		var TLOU58 = localStorage.getItem('name58');
+		document.getElementById('name58').value = TLOU58;
+
+
+
+
+		nameForm.addEventListener("submit", (e) =>{
+			e.preventDefault();
+
+			const nameInput59 = document.querySelector("#name59")
+
+			localStorage.setItem("name59", nameInput59.value)
+		})
+		
+		var TLOU59 = localStorage.getItem('name59');
+		document.getElementById('name59').value = TLOU59;
+
+
+
+
+		nameForm.addEventListener("submit", (e) =>{
+			e.preventDefault();
+
+			const nameInput60 = document.querySelector("#name60")
+
+			localStorage.setItem("name60", nameInput60.value)
+		})
+		
+		var TLOU60 = localStorage.getItem('name60');
+		document.getElementById('name60').value = TLOU60;
+
+
+
+
 		function reloj() {
   			var hoy = new Date();
   			var dia = hoy.getDay();

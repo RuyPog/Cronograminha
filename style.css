@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+
 html{
     margin: 0;
     padding: 0;
@@ -95,6 +97,7 @@ table input {
     font-size: 100%;
     text-align: center;
     font-weight: bold;
+    font-family: 'Raleway', sans-serif;
 }
 footer {
     position: absolute;
