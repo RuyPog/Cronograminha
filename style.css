@@ -99,6 +99,21 @@ table input {
     font-weight: bold;
     font-family: 'Raleway', sans-serif;
 }
+#ButaoE {
+    transition: all .2s;
+    position: absolute;
+    background-color: aqua;
+    width: 5%;
+    height: 5%;
+    right: 24%;
+    bottom: 27%;
+    font-size: 20px;
+    cursor: pointer;
+}
+#ButaoE:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(10px 10px 1px rgba(0,0,0,.5));
+}
 footer {
     position: absolute;
     bottom: 0;
@@ -113,7 +128,7 @@ footer img {
     right: 20px;
 }
 .zap {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: aqua;
   border: 1px solid #000;
   border-radius: 3%;
   color: #000;
@@ -123,7 +138,7 @@ footer img {
   justify-content: center;
   height: 100px;
   width: 250px;
-  margin-left: 5px;
+  margin-left: 30px;
 }
 .zaperson {
   justify-content: center;
