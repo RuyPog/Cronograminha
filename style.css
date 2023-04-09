@@ -88,6 +88,7 @@ th,td {
 }
 .intervalo {
     background-color: gray;
+    font-weight: bold;
 }
 table input {
     background: aqua;
