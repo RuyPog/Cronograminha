@@ -61,7 +61,7 @@ table {
     transform: translate(-50%, -50%);
     background: rgb(236, 236, 129);
     height: 300px;
-    width: 1000px;
+    width: 1002px;
     border-collapse: collapse;
     box-shadow: 1px 2px 1px rgb(192,90,31);
     text-align: center;
@@ -72,10 +72,14 @@ th,td {
     border: 1px solid black;
     width: 0px;
     overflow: hidden;
+    width: 167px;
 }
 .intervalo {
     background-color: gray;
     font-weight: bold;
+}
+.intervalo td {
+    opacity: 0;
 }
 table input {
     background: rgb(236, 236, 129);
@@ -86,6 +90,9 @@ table input {
     text-align: center;
     font-family: 'Raleway', sans-serif;
 }
+input::placeholder {
+    opacity: 0;
+ }
 #ButaoH {
     transition: all .2s;
     position: absolute;

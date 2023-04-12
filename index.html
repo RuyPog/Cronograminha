@@ -9,7 +9,7 @@
 	<!--https://www.flaticon.com/free-icons/open-book Open book icons created by Pixel perfect - Flaticon-->
 	<title>Cronograma Exatas</title>
 </head>
-<body>
+<body class="body">
 	<header>
 		<nav>
 			<ul>
@@ -182,7 +182,7 @@
 			</tr>
 	</table>
 	<form id="name-form">
-		<input id="ButaoE" type="submit" value="Salvar">
+		<input id="ButaoE" type="submit" value="Salvar" onclick="window.location.reload()">
 	</form>
 	<div class="zap"><h2>Próxima aula:</h2>
 	<span class="zaperson"></span>
@@ -195,8 +195,6 @@
 	</footer>
 	<script>
 		const nameForm = document.querySelector("#name-form")
-		const welcomeContainer = document.querySelector("#welcome")
-		const logout = document.querySelector("#logout")
 
 		nameForm.addEventListener("submit", (e) =>{
 			e.preventDefault();
@@ -209,6 +207,9 @@
 		var TLOU1 = localStorage.getItem('name1');
 		document.getElementById('name1').value = TLOU1;
 
+		if(name1.value == '') {
+			name1.style.background = "rgb(4, 202, 202)";
+		}
 
 
 
@@ -223,6 +224,9 @@
 		var TLOU2 = localStorage.getItem('name2');
 		document.getElementById('name2').value = TLOU2;
 
+		if(name2.value == '') {
+			name2.style.background = "rgb(4, 202, 202)";
+		}
 
 
 
@@ -237,6 +241,9 @@
 		var TLOU3 = localStorage.getItem('name3');
 		document.getElementById('name3').value = TLOU3;
 
+		if(name3.value == '') {
+			name3.style.background = "rgb(4, 202, 202)";
+		}
 
 
 
@@ -251,6 +258,9 @@
 		var TLOU4 = localStorage.getItem('name4');
 		document.getElementById('name4').value = TLOU4;
 
+		if(name4.value == '') {
+			name4.style.background = "rgb(4, 202, 202)";
+		}
 
 
 
@@ -265,6 +275,9 @@
 		var TLOU5 = localStorage.getItem('name5');
 		document.getElementById('name5').value = TLOU5;
 
+		if(name5.value == '') {
+			name5.style.background = "rgb(4, 202, 202)";
+		}
 
 
 
@@ -279,6 +292,9 @@
 		var TLOU6 = localStorage.getItem('name6');
 		document.getElementById('name6').value = TLOU6;
 
+		if(name6.value == '') {
+			name6.style.background = "rgb(4, 202, 202)";
+		}
 
 
 
@@ -293,6 +309,9 @@
 		var TLOU7 = localStorage.getItem('name7');
 		document.getElementById('name7').value = TLOU7;
 
+		if(name7.value == '') {
+			name7.style.background = "rgb(4, 202, 202)";
+		}
 
 
 
@@ -307,6 +326,9 @@
 		var TLOU8 = localStorage.getItem('name8');
 		document.getElementById('name8').value = TLOU8;
 
+		if(name8.value == '') {
+			name8.style.background = "rgb(4, 202, 202)";
+		}
 
 
 
@@ -321,6 +343,9 @@
 		var TLOU9 = localStorage.getItem('name9');
 		document.getElementById('name9').value = TLOU9;
 
+		if(name9.value == '') {
+			name9.style.background = "rgb(4, 202, 202)";
+		}
 
 
 
@@ -335,6 +360,9 @@
 		var TLOU10 = localStorage.getItem('name10');
 		document.getElementById('name10').value = TLOU10;
 
+		if(name10.value == '') {
+			name10.style.background = "rgb(4, 202, 202)";
+		}
 
 
 
@@ -349,6 +377,11 @@
 		var TLOU11 = localStorage.getItem('name11');
 		document.getElementById('name11').value = TLOU11;
 
+		if(name11.value == '') {
+			name11.style.background = "rgb(4, 202, 202)";
+		}
+
+
 
 		nameForm.addEventListener("submit", (e) =>{
 			e.preventDefault();
@@ -361,6 +394,9 @@
 		var TLOU12 = localStorage.getItem('name12');
 		document.getElementById('name12').value = TLOU12;
 
+		if(name12.value == '') {
+			name12.style.background = "rgb(4, 202, 202)";
+		}
 
 
 
@@ -375,6 +411,9 @@
 		var TLOU13 = localStorage.getItem('name13');
 		document.getElementById('name13').value = TLOU13;
 
+		if(name13.value == '') {
+			name13.style.background = "rgb(4, 202, 202)";
+		}
 
 
 
@@ -389,6 +428,9 @@
 		var TLOU14 = localStorage.getItem('name14');
 		document.getElementById('name14').value = TLOU14;
 
+		if(name14.value == '') {
+			name14.style.background = "rgb(4, 202, 202)";
+		}
 
 
 
@@ -402,7 +444,10 @@
 		
 		var TLOU15 = localStorage.getItem('name15');
 		document.getElementById('name15').value = TLOU15;
-		
+
+		if(name15.value == '') {
+			name15.style.background = "rgb(4, 202, 202)";
+		}
 
 
 
@@ -417,6 +462,9 @@
 		var TLOU16 = localStorage.getItem('name16');
 		document.getElementById('name16').value = TLOU16;
 
+		if(name16.value == '') {
+			name16.style.background = "rgb(4, 202, 202)";
+		}
 
 
 
@@ -431,6 +479,9 @@
 		var TLOU17 = localStorage.getItem('name17');
 		document.getElementById('name17').value = TLOU17;
 
+		if(name17.value == '') {
+			name17.style.background = "rgb(4, 202, 202)";
+		}
 
 
 
@@ -445,6 +496,9 @@
 		var TLOU18 = localStorage.getItem('name18');
 		document.getElementById('name18').value = TLOU18;
 
+		if(name18.value == '') {
+			name18.style.background = "rgb(4, 202, 202)";
+		}
 
 
 
@@ -459,6 +513,9 @@
 		var TLOU19 = localStorage.getItem('name19');
 		document.getElementById('name19').value = TLOU19;
 
+		if(name19.value == '') {
+			name19.style.background = "rgb(4, 202, 202)";
+		}
 
 
 
@@ -473,6 +530,9 @@
 		var TLOU20 = localStorage.getItem('name20');
 		document.getElementById('name20').value = TLOU20;
 
+		if(name20.value == '') {
+			name20.style.background = "rgb(4, 202, 202)";
+		}
 
 
 
@@ -487,6 +547,9 @@
 		var TLOU21 = localStorage.getItem('name21');
 		document.getElementById('name21').value = TLOU21;
 
+		if(name21.value == '') {
+			name21.style.background = "rgb(4, 202, 202)";
+		}
 
 
 
@@ -501,6 +564,9 @@
 		var TLOU22 = localStorage.getItem('name22');
 		document.getElementById('name22').value = TLOU22;
 
+		if(name22.value == '') {
+			name22.style.background = "rgb(4, 202, 202)";
+		}
 
 
 
@@ -515,6 +581,9 @@
 		var TLOU23 = localStorage.getItem('name23');
 		document.getElementById('name23').value = TLOU23;
 
+		if(name23.value == '') {
+			name23.style.background = "rgb(4, 202, 202)";
+		}
 
 
 
@@ -529,6 +598,9 @@
 		var TLOU24 = localStorage.getItem('name24');
 		document.getElementById('name24').value = TLOU24;
 
+		if(name24.value == '') {
+			name24.style.background = "rgb(4, 202, 202)";
+		}
 
 
 
@@ -543,6 +615,9 @@
 		var TLOU25 = localStorage.getItem('name25');
 		document.getElementById('name25').value = TLOU25;
 
+		if(name25.value == '') {
+			name25.style.background = "rgb(4, 202, 202)";
+		}
 
 
 
@@ -557,6 +632,11 @@
 		var TLOU26 = localStorage.getItem('name26');
 		document.getElementById('name26').value = TLOU26;
 
+		if(name26.value == '') {
+			name26.style.background = "rgb(4, 202, 202)";
+		}
+
+
 
 		nameForm.addEventListener("submit", (e) =>{
 			e.preventDefault();
@@ -569,6 +649,9 @@
 		var TLOU27 = localStorage.getItem('name27');
 		document.getElementById('name27').value = TLOU27;
 
+		if(name27.value == '') {
+			name27.style.background = "rgb(4, 202, 202)";
+		}
 
 
 
@@ -583,6 +666,9 @@
 		var TLOU28 = localStorage.getItem('name28');
 		document.getElementById('name28').value = TLOU28;
 
+		if(name28.value == '') {
+			name28.style.background = "rgb(4, 202, 202)";
+		}
 
 
 
@@ -597,6 +683,9 @@
 		var TLOU29 = localStorage.getItem('name29');
 		document.getElementById('name29').value = TLOU29;
 
+		if(name29.value == '') {
+			name29.style.background = "rgb(4, 202, 202)";
+		}
 
 
 
@@ -611,6 +700,9 @@
 		var TLOU30 = localStorage.getItem('name30');
 		document.getElementById('name30').value = TLOU30;
 
+		if(name30.value == '') {
+			name30.style.background = "rgb(4, 202, 202)";
+		}
 
 
 
@@ -742,7 +834,7 @@
 				document.querySelector(".zaperson").innerHTML = "Nenhuma XD";
 			}
 		};
-		setInterval(reloj, 1000);
+		setInterval(reloj, 500);
 	</script>
 </body>
 </html>

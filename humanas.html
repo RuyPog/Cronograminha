@@ -182,7 +182,7 @@
 			</tr>
 	</table>
 	<form id="name-form">
-		<input id="ButaoH" type="submit" value="Salvar">
+		<input id="ButaoH" type="submit" value="Salvar" onclick="window.location.reload()">
 	</form>
 	<div class="zap"><h2>Próxima aula:</h2>
 	<span class="zaperson"></span>
@@ -195,8 +195,6 @@
 	</footer>
 	<script>
 		const nameForm = document.querySelector("#name-form")
-		const welcomeContainer = document.querySelector("#welcome")
-		const logout = document.querySelector("#logout")
 
 		nameForm.addEventListener("submit", (e) =>{
 			e.preventDefault();
@@ -209,6 +207,9 @@
 		var TLOU31 = localStorage.getItem('name31');
 		document.getElementById('name31').value = TLOU31;
 
+		if(name31.value == '') {
+			name31.style.background = "rgb(197, 197, 110)";
+		}
 
 
 
@@ -223,6 +224,9 @@
 		var TLOU32 = localStorage.getItem('name32');
 		document.getElementById('name32').value = TLOU32;
 
+		if(name32.value == '') {
+			name32.style.background = "rgb(197, 197, 110)";
+		}
 
 
 
@@ -237,6 +241,9 @@
 		var TLOU33 = localStorage.getItem('name33');
 		document.getElementById('name33').value = TLOU33;
 
+		if(name33.value == '') {
+			name33.style.background = "rgb(197, 197, 110)";
+		}
 
 
 
@@ -251,6 +258,9 @@
 		var TLOU34 = localStorage.getItem('name34');
 		document.getElementById('name34').value = TLOU34;
 
+		if(name34.value == '') {
+			name34.style.background = "rgb(197, 197, 110)";
+		}
 
 
 
@@ -265,6 +275,9 @@
 		var TLOU35 = localStorage.getItem('name35');
 		document.getElementById('name35').value = TLOU35;
 
+		if(name35.value == '') {
+			name35.style.background = "rgb(197, 197, 110)";
+		}
 
 
 
@@ -279,6 +292,9 @@
 		var TLOU36 = localStorage.getItem('name36');
 		document.getElementById('name36').value = TLOU36;
 
+		if(name36.value == '') {
+			name36.style.background = "rgb(197, 197, 110)";
+		}
 
 
 
@@ -293,6 +309,9 @@
 		var TLOU37 = localStorage.getItem('name37');
 		document.getElementById('name37').value = TLOU37;
 
+		if(name37.value == '') {
+			name37.style.background = "rgb(197, 197, 110)";
+		}
 
 
 
@@ -307,6 +326,9 @@
 		var TLOU38 = localStorage.getItem('name38');
 		document.getElementById('name38').value = TLOU38;
 
+		if(name38.value == '') {
+			name38.style.background = "rgb(197, 197, 110)";
+		}
 
 
 
@@ -321,6 +343,9 @@
 		var TLOU39 = localStorage.getItem('name39');
 		document.getElementById('name39').value = TLOU39;
 
+		if(name39.value == '') {
+			name39.style.background = "rgb(197, 197, 110)";
+		}
 
 
 
@@ -335,6 +360,9 @@
 		var TLOU40 = localStorage.getItem('name40');
 		document.getElementById('name40').value = TLOU40;
 
+		if(name40.value == '') {
+			name40.style.background = "rgb(197, 197, 110)";
+		}
 
 
 
@@ -349,6 +377,9 @@
 		var TLOU41 = localStorage.getItem('name41');
 		document.getElementById('name41').value = TLOU41;
 
+		if(name41.value == '') {
+			name41.style.background = "rgb(197, 197, 110)";
+		}
 
 
 
@@ -363,6 +394,9 @@
 		var TLOU42 = localStorage.getItem('name42');
 		document.getElementById('name42').value = TLOU42;
 
+		if(name42.value == '') {
+			name42.style.background = "rgb(197, 197, 110)";
+		}
 
 
 
@@ -377,6 +411,9 @@
 		var TLOU43 = localStorage.getItem('name43');
 		document.getElementById('name43').value = TLOU43;
 
+		if(name43.value == '') {
+			name43.style.background = "rgb(197, 197, 110)";
+		}
 
 
 
@@ -391,6 +428,9 @@
 		var TLOU44 = localStorage.getItem('name44');
 		document.getElementById('name44').value = TLOU44;
 
+		if(name44.value == '') {
+			name44.style.background = "rgb(197, 197, 110)";
+		}
 
 
 
@@ -401,10 +441,13 @@
 
 			localStorage.setItem("name45", nameInput45.value)
 		})
-		
+
 		var TLOU45 = localStorage.getItem('name45');
 		document.getElementById('name45').value = TLOU45;
-		
+
+		if(name45.value == '') {
+			name45.style.background = "rgb(197, 197, 110)";
+		}
 
 
 
@@ -419,6 +462,9 @@
 		var TLOU46 = localStorage.getItem('name46');
 		document.getElementById('name46').value = TLOU46;
 
+		if(name46.value == '') {
+			name46.style.background = "rgb(197, 197, 110)";
+		}
 
 
 
@@ -433,6 +479,9 @@
 		var TLOU47 = localStorage.getItem('name47');
 		document.getElementById('name47').value = TLOU47;
 
+		if(name47.value == '') {
+			name47.style.background = "rgb(197, 197, 110)";
+		}
 
 
 
@@ -447,6 +496,9 @@
 		var TLOU48 = localStorage.getItem('name48');
 		document.getElementById('name48').value = TLOU48;
 
+		if(name48.value == '') {
+			name48.style.background = "rgb(197, 197, 110)";
+		}
 
 
 
@@ -461,6 +513,9 @@
 		var TLOU49 = localStorage.getItem('name49');
 		document.getElementById('name49').value = TLOU49;
 
+		if(name49.value == '') {
+			name49.style.background = "rgb(197, 197, 110)";
+		}
 
 
 
@@ -475,6 +530,9 @@
 		var TLOU50 = localStorage.getItem('name50');
 		document.getElementById('name50').value = TLOU50;
 
+		if(name50.value == '') {
+			name50.style.background = "rgb(197, 197, 110)";
+		}
 
 
 
@@ -489,6 +547,9 @@
 		var TLOU51 = localStorage.getItem('name51');
 		document.getElementById('name51').value = TLOU51;
 
+		if(name51.value == '') {
+			name51.style.background = "rgb(197, 197, 110)";
+		}
 
 
 
@@ -503,6 +564,9 @@
 		var TLOU52 = localStorage.getItem('name52');
 		document.getElementById('name52').value = TLOU52;
 
+		if(name52.value == '') {
+			name52.style.background = "rgb(197, 197, 110)";
+		}
 
 
 
@@ -517,6 +581,9 @@
 		var TLOU53 = localStorage.getItem('name53');
 		document.getElementById('name53').value = TLOU53;
 
+		if(name53.value == '') {
+			name53.style.background = "rgb(197, 197, 110)";
+		}
 
 
 
@@ -531,6 +598,9 @@
 		var TLOU54 = localStorage.getItem('name54');
 		document.getElementById('name54').value = TLOU54;
 
+		if(name54.value == '') {
+			name54.style.background = "rgb(197, 197, 110)";
+		}
 
 
 
@@ -545,6 +615,9 @@
 		var TLOU55 = localStorage.getItem('name55');
 		document.getElementById('name55').value = TLOU55;
 
+		if(name55.value == '') {
+			name55.style.background = "rgb(197, 197, 110)";
+		}
 
 
 
@@ -559,6 +632,9 @@
 		var TLOU56 = localStorage.getItem('name56');
 		document.getElementById('name56').value = TLOU56;
 
+		if(name56.value == '') {
+			name56.style.background = "rgb(197, 197, 110)";
+		}
 
 
 
@@ -573,6 +649,9 @@
 		var TLOU57 = localStorage.getItem('name57');
 		document.getElementById('name57').value = TLOU57;
 
+		if(name57.value == '') {
+			name57.style.background = "rgb(197, 197, 110)";
+		}
 
 
 
@@ -587,6 +666,9 @@
 		var TLOU58 = localStorage.getItem('name58');
 		document.getElementById('name58').value = TLOU58;
 
+		if(name58.value == '') {
+			name58.style.background = "rgb(197, 197, 110)";
+		}
 
 
 
@@ -601,6 +683,9 @@
 		var TLOU59 = localStorage.getItem('name59');
 		document.getElementById('name59').value = TLOU59;
 
+		if(name59.value == '') {
+			name59.style.background = "rgb(197, 197, 110)";
+		}
 
 
 
@@ -615,6 +700,9 @@
 		var TLOU60 = localStorage.getItem('name60');
 		document.getElementById('name60').value = TLOU60;
 
+		if(name60.value == '') {
+			name60.style.background = "rgb(197, 197, 110)";
+		}
 
 
 

@@ -55,17 +55,6 @@ h2 {
   margin: 5px;
   margin-left: 70px;
 }
-menu {
-    background-color: white;
-    width: 10%;
-    height: 100%;
-    float: right;
-    margin-bottom: 20px;
-    padding: 5px;
-}
-menu li {
-    list-style: georgian outside url('/non-existent.svg');
-}
 table {
     margin: 0;
     position: absolute;
@@ -74,7 +63,7 @@ table {
     transform: translate(-50%, -50%);
     background: aqua;
     height: 300px;
-    width: 1000px;
+    width: 1002px;
     border-collapse: collapse;
     box-shadow: 1px 2px 1px rgb(9,17,131);
     text-align: center;
@@ -85,10 +74,14 @@ th,td {
     border: 1px solid black;
     width: 0px;
     overflow: hidden;
+    width: 167px;
 }
 .intervalo {
-    background-color: gray;
+    background-color: rgb(116, 116, 116);
     font-weight: bold;
+}
+.intervalo td {
+    opacity: 0;
 }
 table input {
     background: aqua;
@@ -99,6 +92,9 @@ table input {
     text-align: center;
     font-weight: bold;
     font-family: 'Raleway', sans-serif;
+}
+input::placeholder {
+   opacity: 0;
 }
 #ButaoE {
     transition: all .2s;
