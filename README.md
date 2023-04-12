@@ -1,12 +1,1 @@
-# Ruy
-
-
-
-
-
-
-
-
-
-
-Ana Julia, Nathan, Marcela
+Bobajada
