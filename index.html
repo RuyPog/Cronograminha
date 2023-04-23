@@ -710,134 +710,134 @@ Obs: site muito feio 😞">
 
 
 
-		function reloj() {
+		function reloj() { 
   			var hoy = new Date();
   			var dia = hoy.getDay();
   			var hora = hoy.getHours();
   			var minuto = hoy.getMinutes();
   			var segundo = hoy.getSeconds();
+			var vatzap = hora + ":" + minuto;
 
 
-  			if (dia == 1 & hora < 7 & minuto < 20) {
-				document.querySelector(".zaperson").innerHTML = "Matemática I";
+  			if (dia == 1 & vatzap < "7:20") {
+				document.querySelector(".zaperson").innerHTML = document.getElementById("name1").value;
  			}
-  			if (dia == 1 & hora == 7 & minuto == 20) {
-				document.querySelector(".zaperson").innerHTML = "Química";
+  			if (dia == 1 & vatzap >= "7:20") {
+				document.querySelector(".zaperson").innerHTML = document.getElementById("name6").value;
   			}
-  			if (dia == 1 & hora == 8 & minuto == 10) {
-				document.querySelector(".zaperson").innerHTML = "Matemática";
+  			if (dia == 1 & vatzap >= "8:10") {
+				document.querySelector(".zaperson").innerHTML = document.getElementById("name11").value;
   			}
-  			if (dia == 1 & hora == 9 & minuto == 00) {
-				document.querySelector(".zaperson").innerHTML = "Recreio XD";
+  			if (dia == 1 & vatzap >= "9:00") {
+				document.querySelector(".zaperson").innerHTML = "Recreio";
   			}
-  			if (dia == 1 & hora == 9 & minuto == 50) {
-				document.querySelector(".zaperson").innerHTML = "Matemática";
+  			if (dia == 1 & vatzap >= "9:50") {
+				document.querySelector(".zaperson").innerHTML = document.getElementById("name16").value;
   			}
-  			if (dia == 1 & hora == 10 & minuto == 05) {
-				document.querySelector(".zaperson").innerHTML = "História";
+  			if (dia == 1 & vatzap >= "10:05") {
+				document.querySelector(".zaperson").innerHTML = document.getElementById("name21").value;
   			}
-  			if (dia == 1 & hora == 10 & minuto == 55) {
-				document.querySelector(".zaperson").innerHTML = "Ed. Fin.";
+  			if (dia == 1 & vatzap >= "10:55") {
+				document.querySelector(".zaperson").innerHTML = document.getElementById("name26").value;
   			}
 
 
-  			if (dia == 2 & hora < 7 & minuto < 20) {
-				document.querySelector(".zaperson").innerHTML = "Física I";
+  			if (dia == 2 & vatzap < "7:20") {
+				document.querySelector(".zaperson").innerHTML = document.getElementById("name2").value;
   			}
-  			if (dia == 2 & hora == 7 & minuto == 20) {
-				document.querySelector(".zaperson").innerHTML = "Física I";
+  			if (dia == 2 & vatzap >= "7:20") {
+				document.querySelector(".zaperson").innerHTML = document.getElementById("name7").value;
   			}
-  			if (dia == 2 & hora == 8 & minuto == 10) {
-				document.querySelector(".zaperson").innerHTML = "Geografia";
+  			if (dia == 2 & vatzap >= "8:10") {
+				document.querySelector(".zaperson").innerHTML = document.getElementById("name12").value;
 			}
-			if (dia == 2 & hora == 9 & minuto == 00) {
-				document.querySelector(".zaperson").innerHTML = "Recreio XD";
+			if (dia == 2 & vatzap >= "9:00") {
+				document.querySelector(".zaperson").innerHTML = "Recreio";
 			}
-			if (dia == 2 & hora == 9 & minuto == 50) {
-				document.querySelector(".zaperson").innerHTML = "Socialismo";
+			if (dia == 2 & vatzap >= "9:50") {
+				document.querySelector(".zaperson").innerHTML = document.getElementById("name17").value;
 			}
-			if (dia == 2 & hora == 10 & minuto == 05) {
-				document.querySelector(".zaperson").innerHTML = "Biologia I";
+			if (dia == 2 & vatzap >= "10:05") {
+				document.querySelector(".zaperson").innerHTML = document.getElementById("name22").value;
 			}
-			if (dia == 2 & hora == 10 & minuto == 55) {
-				document.querySelector(".zaperson").innerHTML = "História";
+			if (dia == 2 & vatzap >= "10:55") {
+				document.querySelector(".zaperson").innerHTML = document.getElementById("name27").value;
 			}
 
 
-			if (dia == 3 & hora < 7 & minuto < 20) {
-				document.querySelector(".zaperson").innerHTML = "Matemática I";
+			if (dia == 3 & vatzap < "7:20") {
+				document.querySelector(".zaperson").innerHTML = document.getElementById("name3").value;
 			}
-			if (dia == 3 & hora == 7 & minuto == 20) {
-				document.querySelector(".zaperson").innerHTML = "Matemática I";
+			if (dia == 3 & vatzap >= "7:20") {
+				document.querySelector(".zaperson").innerHTML = document.getElementById("name8").value;
 			}
-			if (dia == 3 & hora == 8 & minuto == 10) {
-				document.querySelector(".zaperson").innerHTML = "Inglês";
+			if (dia == 3 & vatzap >= "8:10") {
+				document.querySelector(".zaperson").innerHTML = document.getElementById("name13").value;
 			}
-			if (dia == 3 & hora == 9 & minuto == 00) {
-				document.querySelector(".zaperson").innerHTML = "Recreio XD";
+			if (dia == 3 & vatzap >= "9:00") {
+				document.querySelector(".zaperson").innerHTML = "Recreio";
 			}
-			if (dia == 3 & hora == 9 & minuto == 50) {
-				document.querySelector(".zaperson").innerHTML = "Química";
+			if (dia == 3 & vatzap >= "9:50") {
+				document.querySelector(".zaperson").innerHTML = document.getElementById("name18").value;
 			}
-			if (dia == 3 & hora == 10 & minuto == 05) {
-				document.querySelector(".zaperson").innerHTML = "Matemática II";
+			if (dia == 3 & vatzap >= "10:05") {
+				document.querySelector(".zaperson").innerHTML = document.getElementById("name23").value;
 			}
-			if (dia == 3 & hora >= 10 & minuto <= 55) {
-				document.querySelector(".zaperson").innerHTML = "Ed. Fin.";
+			if (dia == 3 & vatzap >= "10:55") {
+				document.querySelector(".zaperson").innerHTML = document.getElementById("name28").value;
 			}
 
   
-			if (dia == 4 & hora < 7 & minuto < 20) {
-				document.querySelector(".zaperson").innerHTML = "Português";
+			if (dia == 4 & vatzap < "7:20") {
+				document.querySelector(".zaperson").innerHTML = document.getElementById("name4").value;
 			}
-			if (dia == 4 & hora == 7 & minuto == 20) {
-				document.querySelector(".zaperson").innerHTML = "Sociologia";
+			if (dia == 4 & vatzap >= "7:20") {
+				document.querySelector(".zaperson").innerHTML = document.getElementById("name9").value;
 			}
-			if (dia == 4 & hora == 8 & minuto == 10) {
-				document.querySelector(".zaperson").innerHTML = "Inglês";
+			if (dia == 4 & vatzap >= "8:10") {
+				document.querySelector(".zaperson").innerHTML = document.getElementById("name14").value;
 			}
-			if (dia == 4 & hora == 9 & minuto == 00) {
-				document.querySelector(".zaperson").innerHTML = "Recreio XD";
+			if (dia == 4 & vatzap >= "9:00") {
+				document.querySelector(".zaperson").innerHTML = "Recreio";
 			}
-			if (dia == 4 & hora == 9 & minuto == 50) {
-				document.querySelector(".zaperson").innerHTML = "Matemática";
+			if (dia == 4 & vatzap >= "9:50") {
+				document.querySelector(".zaperson").innerHTML = document.getElementById("name19").value;
 			}
-			if (dia == 4 & hora == 10 & minuto == 05) {
-				document.querySelector(".zaperson").innerHTML = "Proj. de Vida";
+			if (dia == 4 & vatzap >= "10:05") {
+				document.querySelector(".zaperson").innerHTML = document.getElementById("name24").value;
 			}
-			if (dia == 4 & hora == 10 & minuto == 55) {
-				document.querySelector(".zaperson").innerHTML = "Biologia";
-			}
-
-
-			if (dia == 5 & hora < 7 & minuto < 20) {
-				document.querySelector(".zaperson").innerHTML = "Português";
-			}
-			if (dia == 5 & hora == 7 & minuto == 20) {
-				document.querySelector(".zaperson").innerHTML = "Português";
-			}
-			if (dia == 5 & hora == 8 & minuto == 10) {
-				document.querySelector(".zaperson").innerHTML = "Biologia I";
-			}
-			if (dia == 5 & hora == 9 & minuto == 00) {
-				document.querySelector(".zaperson").innerHTML = "Recreio XD";
-			}
-			if (dia == 5 & hora == 9 & minuto == 50) {
-				document.querySelector(".zaperson").innerHTML = "Biologia";
-			}
-			if (dia == 5 & hora == 10 & minuto == 05) {
-				document.querySelector(".zaperson").innerHTML = "Geografia";
-			}
-			if (dia == 5 & hora == 10 & minuto == 55) {
-				document.querySelector(".zaperson").innerHTML = "Matemática II";
+			if (dia == 4 & vatzap >= "10:55") {
+				document.querySelector(".zaperson").innerHTML = document.getElementById("name29").value;
 			}
 
 
-			if (hora >= 12) {
-				document.querySelector(".zaperson").innerHTML = "Nenhuma XD";
+			if (dia == 5 & vatzap < "7:20") {
+				document.querySelector(".zaperson").innerHTML = document.getElementById("name5").value;
+			}
+			if (dia == 5 & vatzap >= "7:20") {
+				document.querySelector(".zaperson").innerHTML = document.getElementById("name10").value;
+			}
+			if (dia == 5 & vatzap >= "8:10") {
+				document.querySelector(".zaperson").innerHTML = document.getElementById("name15").value;
+			}
+			if (dia == 5 & vatzap >= "9:00") {
+				document.querySelector(".zaperson").innerHTML = "Recreio";
+			}
+			if (dia == 5 & vatzap >= "9:50") {
+				document.querySelector(".zaperson").innerHTML = document.getElementById("name20").value;
+			}
+			if (dia == 5 & vatzap >= "10:05") {
+				document.querySelector(".zaperson").innerHTML = document.getElementById("name25").value;
+			}
+			if (dia == 5 & vatzap >= "10:55") {
+				document.querySelector(".zaperson").innerHTML = document.getElementById("name30").value;
+			}
+
+			if (vatzap > "11:45") {
+				document.querySelector(".zaperson").innerHTML = "Nenhuma 😎👍";
 			}
 		};
-		setInterval(reloj, 500);
+		setInterval(reloj, 700);
 	</script>
 </body>
 </html>
